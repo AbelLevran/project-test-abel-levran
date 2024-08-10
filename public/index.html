@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">SUITMEDIA</div>
+        <nav>
+            <ul>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Ideas</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="banner">
+        <div class="banner-content">
+            <h1>Ideas</h1>
+            <p>Where all our great things begin</p>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="controls">
+            <div>
+                <label for="show-per-page">Show per page:</label>
+                <select id="show-per-page">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <div>
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                    <option value="-published_at">Newest</option>
+                    <option value="published_at">Oldest</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="post-list" class="post-list"></div>
+
+        <div id="pagination" class="pagination"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
